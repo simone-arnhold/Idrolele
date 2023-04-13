@@ -571,6 +571,7 @@ input.error {
 
   #main-logo {
     height: 58px;
+    padding-left: 10px;
   }
 
   .menu-btn {
