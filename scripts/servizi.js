@@ -39,6 +39,4 @@ document.addEventListener("DOMContentLoaded", function (event) {
     fixSvgMobile(svgLogo)
     addEventListener("resize", fixSvgMobile(svgLogo))
 
-
-
 })

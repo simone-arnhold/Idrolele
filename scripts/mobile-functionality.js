@@ -1,4 +1,4 @@
-window.addEventListener("load", function () {
+document.addEventListener("DOMContentLoaded", function (event) {
 
   const menuBtn = document.querySelector(".menu-btn")
   const navMenu = document.querySelector(".mobile-nav")

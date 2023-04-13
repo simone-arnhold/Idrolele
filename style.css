@@ -220,6 +220,12 @@ section {
   justify-content: center;
   /* set align items to align titles */
   align-items: center;
+  opacity: 0;
+  transition: opacity 800ms ease-out;
+}
+
+section.fadeIn {
+  opacity: 1;
 }
 
 div.section-description {
