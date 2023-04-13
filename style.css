@@ -743,6 +743,10 @@ input.error {
   input.input-small {
     width: 47% !important;
   }
+
+  .footer {
+    padding: 20px 2.8rem;
+  }
 }
 
 /* * {
