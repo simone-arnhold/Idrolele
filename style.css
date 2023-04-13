@@ -262,6 +262,7 @@ div.section-description {
 section#servizi {
   margin-top: 40px;
   min-height: 80vh;
+  background-color: #f0f0f0;
   /* display: flex; */
   /* flex-direction: column; */
   /* align-items: center; */
@@ -427,7 +428,7 @@ div.selected {
 /* CONTATTI START */
 
 section#contatti {
-  background-color: #f0f0f0;
+  /* background-color: #f0f0f0; */
   margin-top: 20px;
   padding-bottom: 20px;
 }
@@ -701,6 +702,10 @@ input.error {
   section {
     padding-left: 0.5rem !important;
     padding-right: 0.5rem !important;
+  }
+
+  section#servizi {
+    padding-top: 0px;
   }
 
   svg#Livello_1 {
