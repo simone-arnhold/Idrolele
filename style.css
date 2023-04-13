@@ -687,6 +687,10 @@ input.error {
     padding-inline: 0;
   }
 
+  section#hero-title {
+    margin-top: 50px;
+  }
+
   section {
     padding-left: 0.5rem !important;
     padding-right: 0.5rem !important;
