@@ -264,9 +264,14 @@ div.section-description {
 }
 
 /* splide */
+
 .splide__slide {
   opacity: 0.3;
   transition: opacity 100ms ease-out;
+}
+
+.splide_description {
+  padding-top: 10px;
 }
 
 .is-active {
@@ -371,9 +376,6 @@ div.selected {
 }
 
 .footer-contact {
-  padding-left: 5rem;
-  padding-right: 5rem;
-  padding: 0px 30px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -725,5 +727,9 @@ input.error {
 
   .footer {
     padding: 20px 2.8rem;
+  }
+
+  .footer-contact h2 {
+    font-size: 1.3em;
   }
 }

@@ -1,6 +1,6 @@
 const splide = new Splide(".splide", {
-    start: 1,
-    perPage: 1.5,
+    // start: 0,
+    perPage: 2,
     perMove: 1,
     gap: 20,
     type: "loop",
@@ -19,6 +19,7 @@ const splide = new Splide(".splide", {
         768: {
             perPage: 1,
             snap: true,
+            width: "100vw",
         }
     }
 });
