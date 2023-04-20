@@ -276,7 +276,7 @@ div.section-description {
 
 .splide_description {
   /* temp hidden */
-  visibility: hidden;
+  /* visibility: hidden; */
   padding-top: 10px;
 }
 
