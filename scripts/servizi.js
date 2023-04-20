@@ -4,20 +4,23 @@ document.addEventListener("DOMContentLoaded", function (event) {
     const descrizioniServizi = document.querySelectorAll(".descrizione-servizi")
 
 
-    console.log(blocchi)
-    console.log(descrizioniServizi)
+    console.log("blocchi: ", blocchi)
+    console.log("servizi: ", descrizioniServizi)
 
     blocchi.forEach(element => {
         element.addEventListener("mouseover", () => {
-            console.log("mouseover over " + element)
             // remove all hover tags
             descrizioniServizi.forEach(element => {
                 element.classList.remove("selected")
+                blocchi.forEach(element => {
+                    element.classList.remove("selected")
+                })
             })
 
-            const index = Array.from(blocchi).indexOf(element)
-            element.classList.toggle("selected")
-            descrizioniServizi[index].classList.toggle("selected")
+            var index = Array.from(blocchi).indexOf(element)
+            element.classList.add("selected")
+            descrizioniServizi[index].classList.add("selected")
+            console.log("current index: ", index)
             // #chiaveingl
             // #martello
             // #pennello
@@ -25,6 +28,16 @@ document.addEventListener("DOMContentLoaded", function (event) {
             // #lavandino
             // #cazzuola
             // #stur
+
+            // new order:
+            // #pennello
+            // #martello
+            // #chiaveingl
+            // #lavandino
+            // #stur
+            // #cazzuola
+            // #pappagallo
+
         })
 
     })
@@ -38,5 +51,4 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
     fixSvgMobile(svgLogo)
     addEventListener("resize", fixSvgMobile(svgLogo))
-
 })

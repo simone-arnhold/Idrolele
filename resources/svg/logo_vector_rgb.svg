@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 26.5.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                    <svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg"
+<svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 820.2 1197.2"
                         style="enable-background:new 0 0 820.2 1197.2;" xml:space="preserve">
                         <style type="text/css">
@@ -140,7 +140,7 @@
                                 fill: url(#SVGID_00000036209516066859913420000017862940265028628386_);
                             }
                         </style>
-                        <g class="blocco-interattivo" id="chiaveingl">
+                        <g class="blocco-interattivo selected" id="chiaveingl">
                             <path class="st0" d="M206.3,359.4c-1.5,5.8,4.8,15.3,16.6,16.5c2.3,0.6,22.2,5.3,44.8,10.6v-24.5c0-0.7,0-1.4,0-2.1
 		c-20.1-4-37.8-7.6-43.7-8.8C215,350.1,207.6,354.5,206.3,359.4L206.3,359.4z" />
                             <g>
