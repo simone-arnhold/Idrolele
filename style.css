@@ -17,12 +17,12 @@
   --colore-azzurroScuro: #0093d7;
   --colore-verdemare: #064960;
   --colore-verdemareSfumato85: #064960d9;
-  --colore-bianco: #fbf7f5;
+  --colore-idroleleBianco: #fbf7f5;
   --colore-grigio: #f0f0f0;
   --colore-grigio2: #aaa;
   --colore-grigioFooter: #58554f;
   --colore-grigioScuro: #333;
-  --colore-nero: #240904;
+  --colore-idroleleNero: #240904;
   --colore-biancoPuro: #fff;
   --colore-neroPuro: #000;
 
@@ -59,7 +59,7 @@ body {
   flex-direction: column;
   height: 100vh;
   margin: 0;
-  background-color: var(--colore-bianco);
+  background-color: var(--colore-idroleleBianco);
   color: #240904;
   z-index: 1;
 
@@ -136,13 +136,17 @@ h1 {
 header {
   height: 152px;
   background-color: var(--colore-verdemareSfumato85);
-  color: var(--colore-bianco);
-  padding: 10px 20px 10px 50px;
+  color: var(--colore-idroleleBianco);
+  /* padding: 10px 20px 10px 50px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 164px;
   box-shadow: var(--multi-shadow);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 #background-image {
@@ -179,7 +183,7 @@ nav ul li a {
   font-size: 18px;
   padding: 10px;
   transition: background-color 0.3s ease;
-  color: var(--colore-bianco);
+  color: var(--colore-idroleleBianco);
 }
 
 div,
@@ -195,7 +199,7 @@ nav p a {
 
 nav ul li a:hover,
 nav p a:hover {
-  background-color: var(--colore-bianco);
+  background-color: var(--colore-idroleleBianco);
   color: var(--colore-verdemare);
   /* color: var(--colore-Nero); */
 }
@@ -328,6 +332,7 @@ path.st2 {
 svg g.blocco-interattivo {
   fill: var(--colore-grigio2);
   transition: fill 200ms ease-out;
+  padding: 10px;
 }
 
 svg g.blocco-interattivo:hover,
@@ -370,7 +375,7 @@ div.selected {
   width: 100%;
   bottom: 0;
   left: 0;
-  color: var(--colore-bianco);
+  color: var(--colore-idroleleBianco);
   text-align: left;
   z-index: -1;
 }
@@ -400,7 +405,7 @@ div.selected {
 }
 
 .social-icons a {
-  color: var(--colore-bianco);
+  color: var(--colore-idroleleBianco);
   margin-left: 20px;
 }
 
@@ -411,7 +416,7 @@ div.selected {
 }
 
 .social-icons a i:hover {
-  background-color: var(--colore-bianco);
+  background-color: var(--colore-idroleleBianco);
   color: var(--colore-verdemare);
   transform: scale(1.3);
 }
@@ -559,7 +564,7 @@ input.error {
     width: 80px;
     height: 80px;
     cursor: pointer;
-    border: 3px solid var(--colore-bianco);
+    border: 3px solid var(--colore-idroleleBianco);
     transform: scale(0.6);
     transition: all 500ms ease-in-out;
   }
@@ -567,7 +572,7 @@ input.error {
   .menu-btn__burger {
     width: 50px;
     height: 6px;
-    background: var(--colore-bianco);
+    background: var(--colore-idroleleBianco);
     border-radius: 5px;
     transition: all 500ms ease-in-out;
   }
@@ -578,7 +583,7 @@ input.error {
     position: absolute;
     width: 50px;
     height: 6px;
-    background: var(--colore-bianco);
+    background: var(--colore-idroleleBianco);
     border-radius: 5px;
     transition: all 500ms ease-in-out;
   }
@@ -620,7 +625,7 @@ input.error {
     z-index: -10;
     width: 100%;
     height: 100%;
-    background: var(--colore-bianco);
+    background: var(--colore-idroleleBianco);
     max-height: calc(100vh-70px);
     opacity: 0;
     transition: all 500ms ease;
@@ -658,7 +663,7 @@ input.error {
 
   .mobile-nav ul li a:hover {
     background: var(--colore-verdemare);
-    color: var(--colore-bianco);
+    color: var(--colore-idroleleBianco);
   }
 
   .container {
@@ -677,9 +682,9 @@ input.error {
     padding-right: 0.5rem !important;
   }
 
-  section#servizi {
+  /* section#servizi {
     padding-top: 0px;
-  }
+  } */
 
   /* section#contatti {
     min-height: 80vh;
@@ -725,9 +730,9 @@ input.error {
     width: 47% !important;
   }
 
-  .footer {
-    /* padding: 20px 2.8rem; */
-  }
+  /* .footer {
+    padding: 20px 2.8rem;
+  } */
 
   .footer-contact h2 {
     font-size: 1.3em;

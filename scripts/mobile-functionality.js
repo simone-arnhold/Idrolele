@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   mobileNavElements.forEach(link => {
     link.addEventListener("click", () => {
       navMenu.classList.remove("open")
+      menuBtn.classList.remove("open")
     })
   });
 
