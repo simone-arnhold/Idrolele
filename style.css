@@ -773,6 +773,7 @@ input.error {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    display: none;
   }
 
   .contact-info {

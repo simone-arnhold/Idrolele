@@ -2,10 +2,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     const blocchi = document.querySelectorAll(".blocco-interattivo")
     const descrizioniServizi = document.querySelectorAll(".descrizione-servizi")
+    let index = 2 // start value, chiaveingl
 
 
     console.log("blocchi: ", blocchi)
     console.log("servizi: ", descrizioniServizi)
+
+
 
     blocchi.forEach(element => {
         element.addEventListener("mouseover", () => {
@@ -16,20 +19,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
                     element.classList.remove("selected")
                 })
             })
-
-            var index = Array.from(blocchi).indexOf(element)
+            index = Array.from(blocchi).indexOf(element)
             element.classList.add("selected")
             descrizioniServizi[index].classList.add("selected")
             console.log("current index: ", index)
-            // #chiaveingl
-            // #martello
-            // #pennello
-            // #pappagallo
-            // #lavandino
-            // #cazzuola
-            // #stur
-
-            // new order:
+            // order:
             // #pennello
             // #martello
             // #chiaveingl
@@ -37,10 +31,36 @@ document.addEventListener("DOMContentLoaded", function (event) {
             // #stur
             // #cazzuola
             // #pappagallo
-
         })
-
     })
+
+    // carets navigation
+    const navCaretLeft = document.querySelector(".fa-caret-left")
+    const navCaretRight = document.querySelector(".fa-caret-right")
+
+    navCaretLeft.addEventListener("click", () => {
+        index -= 1
+        if (index < 0) {
+            index = 6
+        }
+    })
+
+    navCaretRight.addEventListener("click", () => {
+        index += 1
+        if (index > 6) {
+            index = 0
+        }
+    })
+
+
+
+
+
+
+
+
+
+
     // adattamento viewbox mobile
     const svgLogo = document.getElementById("Livello_1");
     function fixSvgMobile(svgLogo) {
