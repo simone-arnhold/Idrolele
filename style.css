@@ -556,7 +556,7 @@ input.error {
 
 @media screen and (max-width: 1024px) {
   #emergenza {
-    /* display: none !important; */
+    display: none !important;
     transform: scale(0.6);
   }
 
