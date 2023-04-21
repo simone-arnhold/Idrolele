@@ -52,15 +52,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
     })
 
-
-
-
-
-
-
-
-
-
     // adattamento viewbox mobile
     const svgLogo = document.getElementById("Livello_1");
     function fixSvgMobile(svgLogo) {

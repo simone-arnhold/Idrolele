@@ -273,11 +273,11 @@ div.section-description {
 
 /* splide */
 
-.splide__slide {
+/* .splide__slide {
   opacity: 1;
-  /* opacity: 0.3; */
+  opacity: 0.3;
   transition: opacity 100ms ease-out;
-}
+} */
 
 .splide_description {
   /* temp hidden */
@@ -292,6 +292,7 @@ div.section-description {
     var(--colore-idroleleRosso),
     var(--colore-idroleleBlu)
   );
+  opacity: 0.5;
 }
 
 .is-active {
@@ -375,6 +376,7 @@ div.descrizione-servizi {
 
 div.descrizione-servizi > * {
   margin-top: 20px;
+  /* text-align: justify; */
   text-align: justify;
 }
 
@@ -791,7 +793,9 @@ input.error {
   }
 
   div.descrizione-servizi {
+    /* padding: 8px; */
     padding: 8px;
+    padding-left: 0px !important;
   }
 
   div.descrizione-servizi > * {
