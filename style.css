@@ -96,7 +96,8 @@ img {
 }
 
 br {
-  line-height: 2em;
+  /* line-height: 2em; */
+  margin-bottom: 20px;
 }
 
 hr {
@@ -377,7 +378,6 @@ div.descrizione-servizi {
 div.descrizione-servizi > * {
   margin-top: 20px;
   /* text-align: justify; */
-  text-align: justify;
 }
 
 div.descrizione-servizi > img {
