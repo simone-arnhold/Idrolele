@@ -335,7 +335,7 @@ section#servizi {
   min-height: 90vh;
   background-color: var(--colore-grigio);
   /* padding-top: 40px; */
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 #interactive-container {
@@ -414,13 +414,24 @@ div.selected {
 }
 
 div.servizi-carets {
-  display: none;
+  width: 25%;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 div.servizi-carets i {
-  padding: 20px;
+  /* padding: 20px; */
+  color: var(--colore-grigio2);
+  transform: scale(1.8);
   /* width: 20px;
   height: 20px; */
+  transition: color 200ms ease;
+}
+
+div.servizi-carets i:hover {
+  color: #000;
 }
 /* ----servizi end */
 /* CONTENT END */
@@ -829,15 +840,8 @@ input.error {
   }
 
   div.servizi-carets {
-    position: relative;
-    bottom: 0px;
     width: 40%;
-    padding-top: 10px;
-    cursor: pointer;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    display: none;
+    /* position: relative; */
   }
 
   .contact-info {

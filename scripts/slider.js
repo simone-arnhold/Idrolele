@@ -9,7 +9,7 @@ const splide = new Splide(".splide", {
     pauseOnHover: false,
     pauseOnFocus: true,
     resetProgress: true,
-    interval: 10000,
+    interval: 15000,
     drag: "free",
     snap: false,
     arrows: true,

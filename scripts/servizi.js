@@ -10,6 +10,49 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
+    // blocchi.forEach(element => {
+    //     element.addEventListener("mouseover", () => {
+    //         cambiaElementoVisibile(element)
+
+    // remove all hover tags
+    // descrizioniServizi.forEach(element => {
+    //     element.classList.remove("selected")
+    //     blocchi.forEach(element => {
+    //         element.classList.remove("selected")
+    //     })
+    // })
+    // index = Array.from(blocchi).indexOf(element)
+    // element.classList.add("selected")
+    // descrizioniServizi[index].classList.add("selected")
+    // console.log("current index: ", index)
+    // order:
+    // #pennello
+    // #martello
+    // #chiaveingl
+    // #lavandino
+    // #stur
+    // #cazzuola
+    // #pappagallo
+    //     })
+    //     function cambiaElementoVisibile(elemento) {
+    //         // rimuovi tutti i tag "selected"
+    //         const vecchioIndex = Array.prototype.indexOf.call(blocchi, "selected")
+
+    //         console.log("vecchio i:", vecchioIndex)
+
+    //         descrizioniServizi.forEach(element => {
+    //             element.classList.remove("selected")
+    //             blocchi.forEach(element => {
+    //                 element.classList.remove("selected")
+    //             })
+    //         })
+    //         nuovoIndex = Array.from(blocchi).indexOf(elemento)
+    //         elemento.classList.add("selected")
+    //         descrizioniServizi[index].classList.add("selected")
+    //         console.log("current index: ", index)
+    //     }
+    // })
+    // vecchia versione
     blocchi.forEach(element => {
         element.addEventListener("mouseover", () => {
             // remove all hover tags
@@ -34,6 +77,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         })
     })
 
+
     // carets navigation
     const navCaretLeft = document.querySelector(".fa-caret-left")
     const navCaretRight = document.querySelector(".fa-caret-right")
@@ -47,6 +91,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     navCaretRight.addEventListener("click", () => {
         index += 1
+        console.log(index)
         if (index > 6) {
             index = 0
         }
