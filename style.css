@@ -414,6 +414,7 @@ div.selected {
 }
 
 div.servizi-carets {
+  display: none;
   width: 25%;
   cursor: pointer;
   display: flex;
