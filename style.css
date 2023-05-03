@@ -29,6 +29,12 @@
   --colore-idroleleRosso: #f62d2d;
   --colore-idroleleBlu: #1034a6;
 
+  --gradiente-rosso-blu: linear-gradient(
+    to right,
+    var(--colore-idroleleRosso),
+    var(--colore-idroleleBlu)
+  );
+
   --multi-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15),
     0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15);
 }
@@ -101,17 +107,7 @@ br {
 }
 
 hr {
-  /* background: linear-gradient(
-    to right,
-    var(--colore-Rosso) 15%,
-    var(--colore-Azzurro) 70%,
-    var(--orig-idroleleBlu) 98%
-  ); */
-  background: linear-gradient(
-    to right,
-    var(--colore-idroleleRosso),
-    var(--colore-idroleleBlu)
-  );
+  background: var(--gradiente-rosso-blu);
   height: 3px;
   border: none;
   border-radius: 5px;
@@ -272,7 +268,7 @@ div.section-description {
   margin: 0;
 }
 
-/* splide */
+/* SPLIDE start*/
 
 /* .splide__slide {
   opacity: 1;
@@ -288,11 +284,7 @@ div.section-description {
 
 .splide__progress__bar {
   height: 3px;
-  background: linear-gradient(
-    to right,
-    var(--colore-idroleleRosso),
-    var(--colore-idroleleBlu)
-  );
+  background: var(--gradiente-rosso-blu);
   opacity: 0.5;
 }
 
@@ -303,6 +295,38 @@ div.section-description {
 .slider-text {
   padding-top: 20px;
 }
+
+.splide__toggle {
+  margin: 6px;
+  /* margin-left: 20px; */
+  outline: 0;
+  border-radius: 50%;
+  display: inline-flex;
+  width: 1.8rem;
+  height: 1.8rem;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+  background-color: var(--colore-grigio);
+  fill: #95a5a6;
+  transition: background-color 200ms ease;
+}
+
+.splide__toggle:hover {
+  fill: var(--colore-grigio);
+  background-color: var(--colore-idroleleRosso);
+}
+
+.splide__toggle svg {
+  height: 40%;
+  width: 40%;
+}
+
+button.splide__pagination__page.is-active {
+  background: var(--colore-idroleleRosso) !important;
+  fill: var(--colore-idroleleRosso) !important;
+}
+/* SPLIDE end*/
 
 /* ----servizi start */
 section#servizi {
@@ -485,14 +509,15 @@ section#contatti {
   margin-top: 20px;
   align-items: top;
   height: auto;
+  width: 100%;
 }
 
 .contact-info {
   width: 100%;
   text-align: right;
   padding-top: 20px;
-  padding-right: 5%;
-  padding-left: 5%;
+  padding-right: 10%;
+  padding-left: 10%;
 }
 
 .contact-form-container {
@@ -501,10 +526,10 @@ section#contatti {
   padding: 20px;
 }
 
-a#contact-telefono,
-a.link-animazione-gradiente {
+/* a#contact-telefono, */
+.link-animazione-gradiente {
   background: linear-gradient(
-    to right,
+    to left,
     var(--colore-idroleleNero),
     var(--colore-idroleleNero),
     var(--colore-idroleleNero),
@@ -527,7 +552,7 @@ a.link-animazione-gradiente {
   -webkit-text-fill-color: transparent;
   /* text-fill-color: transparent; */
   background-size: 500% auto;
-  animation: textShine 6s ease-in-out infinite;
+  animation: textShine 6s ease-in-out infinite reverse;
   filter: brightness(1.3);
 }
 
@@ -584,6 +609,7 @@ input[type="Submit"] {
   transition: all 400ms ease-in-out;
   cursor: pointer;
   box-shadow: var(--multi-shadow);
+  /* width: 80%; */
 }
 
 input[type="Submit"]:hover {
