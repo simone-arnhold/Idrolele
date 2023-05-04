@@ -245,7 +245,7 @@ a#emergenza:hover {
 /* HEADER END */
 
 /* CONTENT START */
-section {
+section:not(.slider__section) {
   margin: 0px;
   width: 100%;
   margin-inline: auto;
@@ -258,6 +258,17 @@ section {
   align-items: center;
   opacity: 0;
   transition: opacity 800ms ease-out;
+}
+
+section.slider__section {
+  width: 100%;
+  margin: 0;
+  padding: 20px 0px;
+  margin-inline: 0;
+}
+
+div.slider__wrapper {
+  padding-inline: 0;
 }
 
 section.fadeIn {
@@ -462,9 +473,6 @@ div.servizi-carets i:hover {
 /* recensioni start */
 div#testimonial__slider {
   overflow: hidden;
-  margin-inline: 0;
-  width: 100vw;
-  overflow-x: hidden;
 }
 
 div.testimonial-container {

@@ -1,7 +1,7 @@
 const heroSplide = new Splide("#hero__splide", {
     // inView: autoplay,
     // start: 0,
-    perPage: 3,
+    perPage: 2,
     perMove: 1,
     gap: 20,
     type: "loop",
