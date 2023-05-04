@@ -60,7 +60,7 @@ const testimonialSplide = new Splide("#testimonial__splide", {
         768: {
             perPage: 1,
             snap: true,
-            // width: "100vw",
+            width: "100vw",
             gap: 20,
         }
     }
