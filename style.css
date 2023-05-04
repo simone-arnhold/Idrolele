@@ -350,7 +350,7 @@ section#servizi {
   min-height: 90vh;
   background-color: var(--colore-grigio);
   /* padding-top: 40px; */
-  padding-bottom: 20px;
+  padding-bottom: 80px;
 }
 
 #interactive-container {
@@ -367,7 +367,7 @@ section#servizi {
   padding-top: 40px;
   width: 100%;
   height: auto;
-  flex-basis: 50%;
+  flex-basis: 40%;
 }
 
 #logo-vector-container {
@@ -421,6 +421,7 @@ div.descrizione-servizi > * {
 
 div.descrizione-servizi > img {
   box-shadow: var(--multi-shadow);
+  /* max-height: 10%; */
 }
 
 div.selected {
@@ -434,7 +435,8 @@ div.servizi-carets {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
+  position: relative;
+  margin-left: 45%;
   /* display: none; */
 }
 
@@ -866,6 +868,7 @@ input.error {
     justify-content: center;
     /* padding: 10px; */
     min-height: 0;
+    padding-bottom: 40px;
   }
 
   /* section#contatti {
@@ -897,8 +900,16 @@ input.error {
   }
 
   div.servizi-carets {
-    width: 40%;
-    /* position: relative; */
+    /* width: 40%; */
+    width: 25%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    margin-left: 35%;
+    margin-top: 20px;
+    /* display: none; */
   }
 
   .contact-info {
