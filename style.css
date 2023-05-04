@@ -11,6 +11,10 @@
 #0093D7 @ 98%
 */
 
+/* * {
+  border: 1px rgba(255, 0, 0, 0.363) solid;
+} */
+
 :root {
   --colore-rosso: #e20613;
   --colore-azzurro: #35a8e0;
@@ -37,6 +41,9 @@
 
   --multi-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15),
     0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15);
+
+  --soft-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 *,
@@ -74,6 +81,10 @@ body {
 
 a {
   display: inline-block !important;
+}
+
+a:visited {
+  color: var(--colore-rosso);
 }
 
 i {
@@ -266,15 +277,19 @@ div.section-description {
 
 .content {
   margin: 0;
+  width: 100%;
+  max-width: 100%;
 }
 
 /* SPLIDE start*/
 
-/* .splide__slide {
-  opacity: 1;
-  opacity: 0.3;
-  transition: opacity 100ms ease-out;
-} */
+.splide__slide {
+  /* transform: scale(0.8, 0.8); */
+  display: inline-flex;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+}
 
 .splide_description {
   /* temp hidden */
@@ -414,12 +429,13 @@ div.selected {
 }
 
 div.servizi-carets {
-  display: none;
   width: 25%;
   cursor: pointer;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  /* display: none; */
 }
 
 div.servizi-carets i {
@@ -435,6 +451,46 @@ div.servizi-carets i:hover {
   color: #000;
 }
 /* ----servizi end */
+
+/* recensioni start */
+div#testimonial__slider {
+  overflow: hidden;
+  margin-inline: 0;
+}
+
+div.testimonial-container {
+  padding: 0px 20px 20px 20px;
+  box-shadow: var(--soft-shadow);
+  margin-bottom: 20px;
+  max-width: 40vw;
+}
+
+.testimonial-container h4 {
+  /* display: inline; */
+  line-height: 3rem;
+  margin-top: 0px;
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  font-weight: 400;
+  /* font-style: italic; */
+}
+
+.testimonial-container img {
+  /* display: inline; */
+  /* position: relative; */
+  height: 16px;
+  margin-bottom: 0.8rem;
+}
+
+.testimonial-container a {
+  text-decoration: underline;
+  font-size: 16px;
+  position: relative;
+  text-align: right;
+  width: 100%;
+  color: var(--colore-azzurroScuro);
+}
+/* recensioni end */
 /* CONTENT END */
 
 /* FOOTER START*/
@@ -863,7 +919,7 @@ input.error {
     width: 47% !important;
   }
 
-  /* .footer-contact h2 {
-    font-size: 1.3em;
-  } */
+  div.testimonial-container {
+    max-width: 80vw;
+  }
 }
