@@ -34,7 +34,7 @@ heroSplide.mount();
 const testimonialSplide = new Splide("#testimonial__splide", {
     // inView: autoplay,
     // start: 0,
-    // perPage: 4,
+    perPage: 4,
     perMove: 1,
     gap: 50,
     type: "loop",

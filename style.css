@@ -463,6 +463,8 @@ div.servizi-carets i:hover {
 div#testimonial__slider {
   overflow: hidden;
   margin-inline: 0;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 div.testimonial-container {
