@@ -23,6 +23,10 @@ const heroSplide = new Splide("#hero__splide", {
     // Responsive breakpoint
     breakpoints: {
 
+        1024: {
+            perPage: 2,
+        },
+
         768: {
             perPage: 0.8,
             snap: true,

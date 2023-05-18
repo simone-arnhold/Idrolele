@@ -362,7 +362,7 @@ div#testimonial__splide button.splide__pagination__page.is-active {
 /* ----servizi start */
 section#servizi {
   justify-content: start;
-  margin-top: 40px;
+  /* margin-top: 40px; */
   min-height: 90vh;
   background-color: var(--colore-grigio);
   /* padding-top: 40px; */
