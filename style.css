@@ -452,7 +452,7 @@ div.servizi-carets {
   flex-direction: row;
   justify-content: space-between;
   position: relative;
-  left: 50%;
+  left: 40%;
   transform: translateX(-50%);
   margin-top: 20px;
   /* display: none; */
