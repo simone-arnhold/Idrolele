@@ -29,7 +29,8 @@ const heroSplide = new Splide("#hero__splide", {
         },
 
         768: {
-            perPage: 0.8,
+            perPage: 1,
+            gap: 10,
             snap: true,
             width: "100vw",
             // focus: "center",
