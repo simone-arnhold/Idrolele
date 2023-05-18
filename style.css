@@ -672,15 +672,17 @@ section#contatti {
 
 input {
   width: 70%;
-  height: 25px;
+  /* height: 25px; */
+  padding: 6px;
 }
 
 textarea {
   width: 70%;
   resize: none;
-  height: 60px;
+  min-height: 60px;
   font-family: "Lato";
   font-size: smaller;
+  padding: 10px 6px;
 }
 
 .input-small {
