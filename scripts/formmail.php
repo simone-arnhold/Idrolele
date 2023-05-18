@@ -46,7 +46,7 @@ array_push($referers,$_SERVER['HTTP_HOST']);
 array_push($referers,$hosting);
 
 // $recipient_array format is $recipient_array = array('sometext'=>'email@example.com','asdf'=>'email2@example.com');
-$recipient_array = array("idroleleGmail"=>"idrolele@gmail.com","idroleleAruba"=>"idrolele@idrolele.com");
+$recipient_array = array("idroleleGmail"=>"idrolele@gmail.com","idroleleArubaInfo"=>"info@idrolele.com");
 
 $valid_env = array('REMOTE_HOST', 'REMOTE_ADDR', 'REMOTE_USER', 'HTTP_USER_AGENT');
 

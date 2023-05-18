@@ -1,3 +1,4 @@
+// hero splide
 const heroSplide = new Splide("#hero__splide", {
     // inView: autoplay,
     // start: 0,
@@ -23,7 +24,7 @@ const heroSplide = new Splide("#hero__splide", {
     // Responsive breakpoint
     breakpoints: {
 
-        1024: {
+        1280: {
             perPage: 2,
         },
 
@@ -38,6 +39,7 @@ const heroSplide = new Splide("#hero__splide", {
 
 heroSplide.mount();
 
+// testimonial splide
 const testimonialSplide = new Splide("#testimonial__splide", {
     // inView: autoplay,
     // start: 0,
