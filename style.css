@@ -83,9 +83,9 @@ a {
   display: inline-block !important;
 }
 
-a:visited {
+/* a:visited {
   color: var(--colore-rosso);
-}
+} */
 
 i {
   padding: 6px;
@@ -263,7 +263,7 @@ section:not(.slider__section) {
 section.slider__section {
   width: 100%;
   margin: 0;
-  padding: 20px 0px;
+  padding: 40px 0px;
   margin-inline: 0;
 }
 
@@ -446,13 +446,15 @@ div.selected {
 }
 
 div.servizi-carets {
-  width: 25%;
+  width: 20%;
   cursor: pointer;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   position: relative;
-  margin-left: 45%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 20px;
   /* display: none; */
 }
 
@@ -463,11 +465,21 @@ div.servizi-carets i {
   /* width: 20px;
   height: 20px; */
   transition: color 200ms ease;
+  /* background-color: #0093d7; */
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 200ms ease;
 }
 
 div.servizi-carets i:hover {
-  color: #000;
+  color: var(--colore-grigio);
+  background-color: var(--colore-grigioScuro);
 }
+
 /* ----servizi end */
 
 /* recensioni start */
@@ -719,6 +731,12 @@ input.error {
   g#titolo {
     display: none !important;
   }
+
+  /* remove hover effects */
+
+  *:hover {
+    color: inherit;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -887,7 +905,7 @@ input.error {
     justify-content: center;
     /* padding: 10px; */
     min-height: 0;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
   }
 
   /* section#contatti {
@@ -919,16 +937,10 @@ input.error {
   }
 
   div.servizi-carets {
-    /* width: 40%; */
-    width: 25%;
-    cursor: pointer;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    width: 50%;
     position: relative;
-    margin-left: 35%;
-    margin-top: 20px;
-    /* display: none; */
+    left: 40%;
+    padding-top: 0px;
   }
 
   .contact-info {
