@@ -406,7 +406,7 @@ function send_mail() {
         $realname = preg_replace($email_replace_array, '', trim($form['firstname'] . ' ' . $form['lastname']));
     }
 
-    $mailbody = 'Qui sotto c\'è il risultato del tuo modulo di feedback.  È stato inviato da' . $mail_newline;
+    $mailbody = 'Ti è stata inviata una email dal tuo sito web idrolele.com. È stato inviato da' . $mail_newline;
     if (isset($realname)) {
         $mailbody .= $realname . ' (' . $form['email'] . ') il ' . $mail_date . $mail_newline . $mail_newline;
     } else {
