@@ -1,7 +1,7 @@
 const heroSplide = new Splide("#hero__splide", {
     // inView: autoplay,
     // start: 0,
-    perPage: 2,
+    perPage: 4,
     perMove: 1,
     gap: 20,
     type: "loop",
@@ -18,13 +18,16 @@ const heroSplide = new Splide("#hero__splide", {
     rewindByDrag: true,
     lazyLoad: true,
     padding: "5rem",
+    // autoWidth: true,
 
     // Responsive breakpoint
     breakpoints: {
+
         768: {
-            perPage: 1,
+            perPage: 0.8,
             snap: true,
             width: "100vw",
+            // focus: "center",
         }
     }
 });
@@ -58,10 +61,11 @@ const testimonialSplide = new Splide("#testimonial__splide", {
     // Responsive breakpoint
     breakpoints: {
         768: {
-            perPage: 1,
+            perPage: 2,
             snap: true,
             // width: "100vw",
             gap: 20,
+            focus: "center",
         }
     }
 });
