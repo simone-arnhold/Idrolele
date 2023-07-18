@@ -102,7 +102,7 @@ section.slider__section {
   document,
   body {
     width: 100%;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
   }
 
   .portfolio-menu {
