@@ -49,7 +49,7 @@ div.descrizione-progetto {
 }
 .portfolio-icon-title {
   text-transform: uppercase;
-  font-size: 0.6em;
+  font-size: 0.8em;
 }
 
 section.portfolio-slider {
@@ -64,6 +64,7 @@ section.slider__section {
   padding-top: 40px;
   padding-left: 5rem;
   padding-right: 5rem;
+  padding-bottom: 80px;
 }
 
 .section-description h3 {
@@ -85,7 +86,6 @@ section.slider__section {
   top: 400px;
   left: 0;
   position: absolute;
-  padding-bottom: 160px;
 }
 
 .portfolio-content > * {
@@ -99,6 +99,10 @@ section.slider__section {
 }
 
 @media screen and (max-width: 768px) {
+  .portfolio-menu {
+    padding-top: 80px !important;
+  }
+
   .portfolio-main {
     min-height: 0% !important;
   }
@@ -106,7 +110,8 @@ section.slider__section {
   .portfolio-content {
     top: 550px;
     position: absolute;
-    padding: 10px;
+    padding: 40px 10px 80px 10px;
+    /* padding-bottom: 80px; */
   }
 
   .portfolio-menu {
