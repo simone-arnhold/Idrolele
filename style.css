@@ -725,6 +725,12 @@ input.error {
 /* CONTATTI END */
 
 @media screen and (max-width: 1024px) {
+  document,
+  body {
+    width: 100%;
+    overflow: hidden;
+  }
+
   #emergenza {
     /* display: none !important; */
     transform: scale(0.6);
