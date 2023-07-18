@@ -120,7 +120,7 @@ section.slider__section {
   }
 
   .portfolio-icons {
-    max-width: 80%;
+    max-width: 100%;
     justify-content: center;
     flex-wrap: wrap;
     z-index: 1;
@@ -139,5 +139,9 @@ section.slider__section {
   .footer-wrapper > * {
     font-size: small;
     padding: 5px;
+  }
+
+  .splide__track {
+    overflow: visible !important;
   }
 }

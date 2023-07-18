@@ -26,7 +26,7 @@ const portfolioSplide = new Splide("#portfolio__splide", {
 
     breakpoints: {
         1280: {
-            perPage: 2,
+            perPage: 1,
         },
 
         768: {
@@ -34,11 +34,12 @@ const portfolioSplide = new Splide("#portfolio__splide", {
             perPage: 1,
             gap: 10,
             snap: true,
-            // width: "150vw",
+            // width: "80vw",
             // height: "500px",
             focus: "center",
             // heightRatio: 0.5,
-            autoHeight: true,
+            // autoHeight: true,
+            // autoWidth: true,
         }
     }
 });
