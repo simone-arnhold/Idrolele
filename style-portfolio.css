@@ -140,8 +140,4 @@ section.slider__section {
     font-size: small;
     padding: 5px;
   }
-
-  .splide__track {
-    overflow: visible !important;
-  }
 }
