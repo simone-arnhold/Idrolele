@@ -29,8 +29,8 @@ div.descrizione-progetto {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 200px;
-  max-width: 200px;
+  height: 160px;
+  max-width: 160px;
   opacity: 0.25;
   transition: opacity 200ms ease-out;
   flex-shrink: 0;
@@ -61,9 +61,9 @@ section.slider__section {
 }
 
 .portfolio-content {
-  padding-top: 40px;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  padding-top: 0px;
+  padding-left: 15rem;
+  padding-right: 15rem;
   padding-bottom: 80px;
 }
 
@@ -108,7 +108,7 @@ section.slider__section {
   }
 
   .portfolio-content {
-    top: 550px;
+    top: 570px;
     position: absolute;
     padding: 40px 10px 80px 10px;
     /* padding-bottom: 80px; */
