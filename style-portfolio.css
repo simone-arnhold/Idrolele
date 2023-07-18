@@ -139,7 +139,7 @@ section.slider__section {
   }
 
   .footer-wrapper {
-    /* display: none; */
+    display: none;
   }
 
   .footer-wrapper > * {
