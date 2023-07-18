@@ -22,13 +22,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
     //         descrizioniServizi[index].classList.add("selected")
     //         console.log("current index: ", index)
     //         // order:
-    //         // #pennello
-    //         // #martello
-    //         // #chiaveingl
-    //         // #lavandino
-    //         // #stur
-    //         // #cazzuola
-    //         // #pappagallo
+    //         // #pennello     TINTEGGIATURE
+    //         // #martello     MONTAGGI
+    //         // #chiaveingl   RIPARAZIONI
+    //         // #lavandino    IMPIANTI
+    //         // #stur         EMERGENZE
+    //         // #cazzuola     MURATURA
+    //         // #pappagallo   ABOUT US
     //     })
     // })
 

@@ -1,7 +1,5 @@
 // hero splide
 const heroSplide = new Splide("#hero__splide", {
-    // inView: autoplay,
-    // start: 0,
     perPage: 4,
     perMove: 1,
     gap: 20,
@@ -19,7 +17,6 @@ const heroSplide = new Splide("#hero__splide", {
     rewindByDrag: true,
     lazyLoad: true,
     padding: "5rem",
-    // autoWidth: true,
 
     // Responsive breakpoint
     breakpoints: {
@@ -29,11 +26,12 @@ const heroSplide = new Splide("#hero__splide", {
         },
 
         768: {
+            mediaQuery: "min",
             perPage: 1,
             gap: 10,
             snap: true,
-            width: "100vw",
-            // focus: "center",
+            fixedWidth: "70vw",
+            focus: "center",
         }
     }
 });

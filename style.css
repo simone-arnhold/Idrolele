@@ -246,6 +246,7 @@ a#emergenza:hover {
 
 /* CONTENT START */
 section:not(.slider__section) {
+  /* section { */
   margin: 0px;
   width: 100%;
   margin-inline: auto;
@@ -405,15 +406,13 @@ path.st2 {
   fill: var(--colore-grigioScuro);
 }
 
-svg g.blocco-interattivo {
+.blocco-interattivo {
   fill: var(--colore-grigio2);
   transition: fill 200ms ease-out;
   padding: 10px;
 }
 
-/* svg g.blocco-interattivo:hover,
-svg g.blocco-interattivo:focus, */
-svg g.blocco-interattivo.selected {
+.blocco-interattivo.selected {
   fill: var(--colore-neroPuro);
   cursor: pointer;
 }
@@ -881,6 +880,19 @@ input.error {
   .mobile-nav ul li a:hover {
     background: var(--colore-verdemare);
     color: var(--colore-idroleleBianco);
+  }
+
+  .mobile-nav-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobile-nav-icons li {
+    transform: scale(1.5);
+    padding: 20px;
+    height: 132px;
   }
 
   .container {

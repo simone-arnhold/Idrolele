@@ -1,0 +1,138 @@
+div.portfolio-main {
+  min-height: 20%;
+  justify-content: flex-start;
+}
+
+div.descrizione-progetto {
+  text-align: justify;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.descrizione-progetto img {
+  padding-top: 20px;
+}
+
+.portfolio-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.portfolio-icon-container {
+  /* border: 1px red solid; */
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+  max-width: 200px;
+  opacity: 0.25;
+  transition: opacity 200ms ease-out;
+  flex-shrink: 0;
+}
+
+.portfolio-icon-container:hover {
+  fill: black;
+  color: black;
+  opacity: 1;
+}
+
+.portfolio-icon {
+  margin: 0;
+  cursor: pointer;
+  /* opacity: 0.5; */
+}
+.portfolio-icon-title {
+  text-transform: uppercase;
+  font-size: 0.6em;
+}
+
+section.portfolio-slider {
+  height: 100%;
+}
+
+section.slider__section {
+  padding-top: 0px;
+}
+
+.portfolio-content {
+  padding-top: 40px;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.section-description h3 {
+  text-transform: uppercase;
+}
+
+.section-description img {
+  max-width: 400px;
+  /* margin-left: auto; */
+  margin-right: auto;
+  /* width: 50%; */
+}
+
+.portfolio-content {
+  /* display: none; */
+  opacity: 0;
+  transition: opacity 400ms ease-in-out;
+  flex-direction: column;
+  top: 400px;
+  left: 0;
+  position: absolute;
+  padding-bottom: 160px;
+}
+
+.portfolio-content > * {
+  margin-top: 20px;
+}
+
+.footer-wrapper {
+  position: fixed;
+  bottom: 0px;
+  z-index: 10;
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio-main {
+    min-height: 0% !important;
+  }
+
+  .portfolio-content {
+    top: 550px;
+    position: absolute;
+    padding: 10px;
+  }
+
+  .portfolio-menu {
+    /* width: 100%;
+    max-width: 100%; */
+  }
+
+  .portfolio-icons {
+    max-width: 80%;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 1;
+  }
+
+  .portfolio-icon-container {
+    max-height: 120px;
+    max-width: 120px;
+    flex-shrink: 1;
+  }
+
+  .footer-wrapper {
+    /* display: none; */
+  }
+
+  .footer-wrapper > * {
+    font-size: small;
+    padding: 5px;
+  }
+}
