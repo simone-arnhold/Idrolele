@@ -114,7 +114,7 @@ section.slider__section {
   }
 
   .portfolio-content {
-    top: 570px;
+    top: 360px;
     position: absolute;
     padding: 40px 10px 80px 10px;
     /* padding-bottom: 80px; */
@@ -133,8 +133,8 @@ section.slider__section {
   }
 
   .portfolio-icon-container {
-    max-height: 120px;
-    max-width: 120px;
+    max-height: 90px;
+    max-width: 90px;
     flex-shrink: 1;
   }
 
